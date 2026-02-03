@@ -1,6 +1,8 @@
 # Quave One CLI
 
-Command-line interface for the [QuaveOne](https://quave.one/) platform.
+Command-line interface for the [QuaveOne](https://www.quave.one/) platform.
+
+📖 **[Full Documentation](https://docs.quave.one/cli/)**
 
 ## Installation
 
@@ -77,6 +79,7 @@ sudo rm /usr/local/bin/quaveone
 
 ## Links
 
+- [Documentation](https://docs.quave.one/cli/)
 - [QuaveOne Platform](https://www.quave.one/)
 - [Releases](https://github.com/quaveone/cli/releases)
 - [Issues](https://github.com/quaveone/cli/issues)
