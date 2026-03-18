@@ -112,6 +112,15 @@ install_binary() {
 
   info "Installed: ${INSTALL_DIR}/${BINARY}"
 
+  # Create backward-compatible symlink for zcloud
+  SYMLINK="${INSTALL_DIR}/zcloud"
+  if [ -w "$INSTALL_DIR" ]; then
+    ln -sf "${INSTALL_DIR}/${BINARY}" "$SYMLINK"
+  else
+    sudo ln -sf "${INSTALL_DIR}/${BINARY}" "$SYMLINK"
+  fi
+  info "Symlink created: ${SYMLINK} -> ${INSTALL_DIR}/${BINARY}"
+
   # Check PATH
   case ":$PATH:" in
     *":${INSTALL_DIR}:"*) ;;
